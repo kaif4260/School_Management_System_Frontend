@@ -1,0 +1,1138 @@
+/* =========================================
+   SECTIONS PAGE
+========================================= */
+
+.sections-main {
+    flex: 1;
+    padding: 32px;
+    background: #f8f9fc;
+    min-height: calc(100vh - 70px);
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.sections-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.sections-header h1 {
+    margin: 0 0 6px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.sections-header p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================
+   ADD BUTTON
+========================================= */
+
+.add-section-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 18px;
+
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #7c3aed
+    );
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(99, 102, 241, 0.22);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.add-section-btn:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 20px rgba(99, 102, 241, 0.3);
+}
+
+.plus-icon {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   STAT CARDS
+========================================= */
+
+.section-stats {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+
+    margin-bottom: 24px;
+}
+
+.section-stat-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    border: 1px solid #eef0f5;
+
+    box-shadow:
+        0 4px 14px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.section-stat-card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #eef2ff;
+
+    font-size: 22px;
+}
+
+.section-stat-card span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #6b7280;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.section-stat-card strong {
+    display: block;
+
+    color: #111827;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    padding: 13px 16px;
+
+    border-radius: 10px;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+
+    color: #b91c1c;
+
+    font-size: 14px;
+}
+
+.error-message span {
+    font-size: 18px;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.section-form-card {
+    background: white;
+
+    border: 1px solid #eef0f5;
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    margin-bottom: 24px;
+
+    box-shadow:
+        0 5px 18px rgba(15, 23, 42, 0.06);
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 24px;
+}
+
+.form-header h2 {
+    margin: 0 0 5px;
+
+    font-size: 20px;
+
+    color: #1f2937;
+}
+
+.form-header p {
+    margin: 0;
+
+    color: #6b7280;
+
+    font-size: 13px;
+}
+
+.close-form-btn {
+    width: 34px;
+    height: 34px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.close-form-btn:hover {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 8px;
+
+    color: #374151;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.optional {
+    color: #9ca3af;
+
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #dfe3eb;
+
+    border-radius: 9px;
+
+    padding: 11px 13px;
+
+    background: white;
+
+    color: #1f2937;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.form-group small {
+    margin-top: 5px;
+
+    color: #9ca3af;
+
+    font-size: 11px;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   FORM ACTIONS
+========================================= */
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 24px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #f0f1f5;
+}
+
+.cancel-btn,
+.save-btn {
+    border: none;
+
+    border-radius: 9px;
+
+    padding: 10px 18px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.cancel-btn {
+    background: #f3f4f6;
+
+    color: #4b5563;
+}
+
+.cancel-btn:hover {
+    background: #e5e7eb;
+}
+
+.save-btn {
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #7c3aed
+    );
+
+    color: white;
+
+    box-shadow:
+        0 4px 10px rgba(99, 102, 241, 0.18);
+}
+
+.save-btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 14px rgba(99, 102, 241, 0.25);
+}
+
+.save-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   TABLE CARD
+========================================= */
+
+.sections-table-card {
+    background: white;
+
+    border: 1px solid #eef0f5;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 18px rgba(15, 23, 42, 0.05);
+}
+
+
+/* =========================================
+   TOOLBAR
+========================================= */
+
+.sections-toolbar {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 18px 20px;
+
+    border-bottom: 1px solid #eef0f5;
+
+    background: #ffffff;
+}
+
+.search-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    max-width: 340px;
+}
+
+.search-box .search-icon {
+    position: absolute;
+
+    left: 13px;
+
+    font-size: 15px;
+
+    pointer-events: none;
+}
+
+.search-box input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 11px 40px 11px 38px;
+
+    border: 1px solid #dfe3eb;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    color: #1f2937;
+
+    font-size: 13px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.search-box input:focus {
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.08);
+}
+
+.clear-search {
+    position: absolute;
+
+    right: 8px;
+
+    width: 27px;
+    height: 27px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.clear-search:hover {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.filter-group {
+    display: flex;
+
+    gap: 10px;
+}
+
+.filter-group select {
+    min-width: 125px;
+
+    padding: 10px 30px 10px 11px;
+
+    border: 1px solid #dfe3eb;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #374151;
+
+    font-size: 13px;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.filter-group select:focus {
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.08);
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.table-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px;
+
+    border-bottom: 1px solid #eef0f5;
+}
+
+.table-header h2 {
+    margin: 0 0 5px;
+
+    color: #1f2937;
+
+    font-size: 18px;
+}
+
+.table-header p {
+    margin: 0;
+
+    color: #9ca3af;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.sections-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 900px;
+}
+
+.sections-table th {
+    padding: 13px 18px;
+
+    background: #f8f9fc;
+
+    border-bottom: 1px solid #eef0f5;
+
+    color: #6b7280;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-align: left;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+}
+
+.sections-table td {
+    padding: 15px 18px;
+
+    border-bottom: 1px solid #f0f1f5;
+
+    color: #374151;
+
+    font-size: 13px;
+
+    vertical-align: middle;
+}
+
+.sections-table tbody tr {
+    transition: background 0.15s ease;
+}
+
+.sections-table tbody tr:hover {
+    background: #fafaff;
+}
+
+.sections-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   ID
+========================================= */
+
+.section-id {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 4px 8px;
+
+    border-radius: 6px;
+
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   SECTION INFO
+========================================= */
+
+.section-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.section-avatar {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: #eef2ff;
+
+    font-size: 16px;
+}
+
+.section-info strong {
+    color: #1f2937;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   CLASS BADGE
+========================================= */
+
+.class-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 5px 9px;
+
+    border-radius: 7px;
+
+    background: #f5f3ff;
+
+    color: #6d28d9;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.description-text {
+    display: block;
+
+    max-width: 230px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.status-select {
+    padding: 6px 27px 6px 9px;
+
+    border: 1px solid transparent;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    outline: none;
+
+    cursor: pointer;
+}
+
+.status-active {
+    background: #ecfdf5;
+
+    border-color: #bbf7d0;
+
+    color: #15803d;
+}
+
+.status-inactive {
+    background: #fef2f2;
+
+    border-color: #fecaca;
+
+    color: #b91c1c;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.action-buttons {
+    display: flex;
+
+    gap: 7px;
+}
+
+.edit-btn,
+.delete-btn {
+    border: none;
+
+    border-radius: 7px;
+
+    padding: 7px 11px;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.edit-btn {
+    background: #eef2ff;
+
+    color: #4f46e5;
+}
+
+.edit-btn:hover {
+    background: #e0e7ff;
+
+    transform: translateY(-1px);
+}
+
+.delete-btn {
+    background: #fef2f2;
+
+    color: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #fee2e2;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   LOADING / EMPTY
+========================================= */
+
+.table-state {
+    min-height: 280px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+.table-state p {
+    margin: 10px 0 0;
+
+    color: #9ca3af;
+
+    font-size: 13px;
+}
+
+.table-state h3 {
+    margin: 12px 0 4px;
+
+    color: #374151;
+
+    font-size: 17px;
+}
+
+.table-state h3 + p {
+    margin-top: 0;
+}
+
+.empty-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #eef2ff;
+
+    font-size: 28px;
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+
+    border: 3px solid #e5e7eb;
+
+    border-top-color: #6366f1;
+
+    border-radius: 50%;
+
+    animation: sectionSpinner 0.8s linear infinite;
+}
+
+@keyframes sectionSpinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.table-state .add-section-btn {
+    margin-top: 18px;
+}
+
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.pagination-container {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 16px 20px;
+
+    border-top: 1px solid #eef0f5;
+
+    background: #ffffff;
+}
+
+.pagination-info {
+    color: #6b7280;
+
+    font-size: 12px;
+}
+
+.pagination-info strong {
+    color: #374151;
+}
+
+.pagination-controls {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.pagination-controls button {
+    border: 1px solid #dfe3eb;
+
+    border-radius: 8px;
+
+    padding: 8px 12px;
+
+    background: white;
+
+    color: #374151;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+    border-color: #6366f1;
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+}
+
+.pagination-controls button:disabled {
+    opacity: 0.45;
+
+    cursor: not-allowed;
+}
+
+.page-number {
+    min-width: 90px;
+
+    text-align: center;
+
+    color: #6b7280;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .sections-main {
+        padding: 24px;
+    }
+
+    .sections-toolbar {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    .search-box {
+        max-width: none;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .filter-group select {
+        flex: 1;
+    }
+}
+
+
+@media (max-width: 750px) {
+
+    .sections-main {
+        padding: 18px;
+    }
+
+    .sections-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+    .add-section-btn {
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .section-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: auto;
+    }
+
+    .filter-group {
+        flex-direction: column;
+    }
+
+    .filter-group select {
+        width: 100%;
+    }
+
+    .pagination-container {
+        align-items: stretch;
+
+        flex-direction: column;
+    }
+
+    .pagination-controls {
+        justify-content: center;
+    }
+
+    .pagination-info {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 430px) {
+
+    .sections-main {
+        padding: 14px;
+    }
+
+    .sections-header h1 {
+        font-size: 25px;
+    }
+
+    .section-form-card {
+        padding: 18px;
+    }
+
+    .table-header {
+        padding: 16px;
+    }
+
+    .sections-toolbar {
+        padding: 14px;
+    }
+
+    .pagination-container {
+        padding: 14px;
+    }
+
+    .pagination-controls {
+        gap: 6px;
+    }
+
+    .pagination-controls button {
+        padding: 8px 9px;
+    }
+
+    .page-number {
+        min-width: 75px;
+    }
+}

@@ -1,0 +1,261 @@
+.student-page {
+min-height: 100vh;
+background: #f5f7fb;
+}
+
+.student-layout {
+display: flex;
+align-items: stretch;
+min-height: calc(100vh - 70px);
+}
+
+.student-main {
+flex: 1;
+min-width: 0;
+padding: 32px;
+}
+
+.student-welcome {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 24px;
+padding: 34px;
+border-radius: 18px;
+background: linear-gradient(120deg, #233f9f, #4269e8);
+color: #ffffff;
+box-shadow: 0 10px 28px rgba(49, 86, 217, 0.12);
+}
+
+.student-eyebrow {
+color: #d5dfff;
+font-size: 10px;
+font-weight: 750;
+letter-spacing: 1.6px;
+}
+
+.student-welcome h1 {
+margin: 12px 0 10px;
+font-size: clamp(23px, 3vw, 32px);
+font-weight: 750;
+letter-spacing: -0.7px;
+}
+
+.student-welcome p {
+max-width: 590px;
+margin: 0;
+color: #e0e7ff;
+font-size: 13px;
+line-height: 1.8;
+}
+
+.student-welcome-icon {
+width: 82px;
+height: 82px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+border: 1px solid rgba(255, 255, 255, 0.25);
+border-radius: 22px;
+background: rgba(255, 255, 255, 0.13);
+font-size: 39px;
+}
+
+.student-section {
+margin-top: 32px;
+}
+
+.student-section-heading {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 18px;
+}
+
+.student-section-heading h2 {
+margin: 0;
+color: #1b2941;
+font-size: 19px;
+font-weight: 750;
+}
+
+.student-section-heading p {
+margin: 7px 0 0;
+color: #8490a3;
+font-size: 12px;
+}
+
+.student-feature-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 18px;
+}
+
+.student-feature-card {
+min-height: 190px;
+padding: 23px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+border: 1px solid #e8edf4;
+border-radius: 15px;
+background: #ffffff;
+color: inherit;
+text-decoration: none;
+box-shadow: 0 3px 10px rgba(25, 42, 70, 0.025);
+transition: transform 0.2s ease, box-shadow 0.2s ease,
+border-color 0.2s ease;
+}
+
+.student-feature-card:hover {
+transform: translateY(-3px);
+border-color: #d5def8;
+box-shadow: 0 10px 25px rgba(25, 42, 70, 0.07);
+}
+
+.student-feature-icon {
+width: 45px;
+height: 45px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 12px;
+font-size: 23px;
+font-weight: 700;
+}
+
+.student-card-blue {
+background: #eaf0ff;
+color: #3156d9;
+}
+
+.student-card-purple {
+background: #f0eaff;
+color: #7a4ed1;
+}
+
+.student-card-green {
+background: #e4f8ee;
+color: #218557;
+}
+
+.student-card-orange {
+background: #fff0e3;
+color: #c9782a;
+}
+
+.student-feature-card h3 {
+margin: 17px 0 7px;
+color: #24324a;
+font-size: 15px;
+font-weight: 750;
+}
+
+.student-feature-card p {
+margin: 0;
+color: #7e899b;
+font-size: 12px;
+line-height: 1.7;
+}
+
+.student-feature-action {
+width: 100%;
+margin-top: auto;
+padding-top: 17px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #3156d9;
+font-size: 12px;
+font-weight: 700;
+}
+
+.student-feature-action span {
+font-size: 18px;
+}
+
+.student-info-panel {
+margin-top: 24px;
+padding: 20px;
+display: flex;
+align-items: flex-start;
+gap: 14px;
+border: 1px solid #dfe8ff;
+border-radius: 13px;
+background: #f0f4ff;
+}
+
+.student-info-icon {
+width: 30px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+border-radius: 50%;
+background: #dce6ff;
+color: #3156d9;
+font-weight: 800;
+}
+
+.student-info-panel h3 {
+margin: 1px 0 6px;
+color: #263b70;
+font-size: 13px;
+}
+
+.student-info-panel p {
+margin: 0;
+color: #617298;
+font-size: 12px;
+line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+.student-main {
+padding: 24px;
+}
+
+.student-welcome {
+    padding: 27px;
+}
+
+}
+
+@media (max-width: 768px) {
+.student-layout {
+flex-direction: column;
+}
+
+.student-main {
+    padding: 18px;
+}
+
+.student-welcome {
+    padding: 23px;
+}
+
+.student-welcome-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    font-size: 29px;
+}
+
+.student-feature-grid {
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media (max-width: 480px) {
+.student-welcome-icon {
+display: none;
+}
+
+.student-welcome {
+    padding: 22px;
+}
+
+}

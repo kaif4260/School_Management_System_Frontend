@@ -1,0 +1,292 @@
+.esa-layout {
+min-height: 100vh;
+background: #f5f7fb;
+color: #172033;
+}
+
+.esa-body {
+display: flex;
+align-items: flex-start;
+}
+
+.esa-main {
+flex: 1;
+min-width: 0;
+padding: 30px;
+}
+
+.esa-heading {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+margin-bottom: 26px;
+}
+
+.esa-eyebrow {
+color: #6478d3;
+font-size: 11px;
+font-weight: 800;
+letter-spacing: 1.5px;
+}
+
+.esa-heading h1 {
+margin: 8px 0;
+font-size: clamp(23px, 3vw, 30px);
+font-weight: 750;
+}
+
+.esa-heading p,
+.esa-card-heading p,
+.esa-list-heading p {
+margin: 0;
+color: #778198;
+font-size: 13px;
+}
+
+.esa-total-card {
+min-width: 205px;
+padding: 17px 20px;
+display: flex;
+flex-direction: column;
+gap: 5px;
+border: 1px solid #e3e8f5;
+border-radius: 14px;
+background: #fff;
+}
+
+.esa-total-card span,
+.esa-total-card small {
+color: #778198;
+font-size: 12px;
+}
+
+.esa-total-card strong {
+color: #455bd7;
+font-size: 23px;
+}
+
+.esa-card {
+padding: 24px;
+margin-bottom: 24px;
+border: 1px solid #e7eaf2;
+border-radius: 16px;
+background: #fff;
+box-shadow: 0 5px 18px rgb(27 39 74 / 4%);
+}
+
+.esa-card-heading,
+.esa-list-heading {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+margin-bottom: 22px;
+}
+
+.esa-card h2,
+.esa-list-heading h2 {
+margin: 0 0 6px;
+font-size: 18px;
+}
+
+.esa-form-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+}
+
+.esa-form-grid label {
+display: flex;
+flex-direction: column;
+gap: 8px;
+color: #39445a;
+font-size: 13px;
+font-weight: 650;
+}
+
+.esa-form-grid input,
+.esa-form-grid select,
+.esa-list-heading input {
+width: 100%;
+min-width: 0;
+padding: 11px 12px;
+border: 1px solid #dce2ed;
+border-radius: 8px;
+outline: none;
+background: #fff;
+color: #172033;
+font: inherit;
+font-weight: 400;
+}
+
+.esa-form-grid input:focus,
+.esa-form-grid select:focus,
+.esa-list-heading input:focus {
+border-color: #6478d3;
+box-shadow: 0 0 0 3px rgb(100 120 211 / 12%);
+}
+
+.esa-form-grid input[readonly] {
+background: #f1f4fc;
+color: #455bd7;
+font-weight: 700;
+}
+
+.esa-hint {
+color: #6478d3;
+font-size: 11px;
+font-weight: 400;
+}
+
+.esa-form-footer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+margin-top: 24px;
+padding-top: 20px;
+border-top: 1px solid #edf0f6;
+}
+
+.esa-form-footer p {
+margin: 0;
+color: #778198;
+font-size: 12px;
+}
+
+.esa-form-footer button {
+padding: 12px 20px;
+border: 0;
+border-radius: 9px;
+background: #4d61d8;
+color: #fff;
+font-weight: 700;
+cursor: pointer;
+white-space: nowrap;
+}
+
+.esa-form-footer button:hover {
+background: #394fc6;
+}
+
+.esa-form-footer button:disabled {
+cursor: not-allowed;
+opacity: 0.65;
+}
+
+.esa-list-heading input {
+max-width: 300px;
+}
+
+.esa-table-wrapper {
+width: 100%;
+overflow-x: auto;
+}
+
+.esa-table {
+width: 100%;
+border-collapse: collapse;
+text-align: left;
+white-space: nowrap;
+}
+
+.esa-table th {
+padding: 14px 13px;
+background: #f6f8fc;
+color: #68748b;
+font-size: 11px;
+text-transform: uppercase;
+letter-spacing: 0.4px;
+}
+
+.esa-table td {
+padding: 15px 13px;
+border-bottom: 1px solid #edf0f5;
+font-size: 13px;
+}
+
+.esa-table tbody tr:hover {
+background: #fafbff;
+}
+
+.esa-delete {
+padding: 7px 11px;
+border: 1px solid #f0d0d0;
+border-radius: 7px;
+background: #fff7f7;
+color: #bd3737;
+cursor: pointer;
+font-weight: 650;
+}
+
+.esa-delete:hover {
+background: #ffeaea;
+}
+
+.esa-alert {
+margin-bottom: 18px;
+padding: 13px 16px;
+border-radius: 9px;
+font-size: 13px;
+}
+
+.esa-error {
+border: 1px solid #f2caca;
+background: #fff1f1;
+color: #a92e2e;
+}
+
+.esa-success {
+border: 1px solid #c6e8d3;
+background: #effaf3;
+color: #237744;
+}
+
+.esa-empty {
+padding: 38px 15px;
+color: #778198;
+text-align: center;
+font-size: 13px;
+}
+
+@media (max-width: 1000px) {
+.esa-form-grid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.esa-heading {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+}
+
+@media (max-width: 650px) {
+.esa-main {
+padding: 16px;
+}
+
+
+.esa-card {
+    padding: 17px;
+}
+
+.esa-form-grid {
+    grid-template-columns: 1fr;
+}
+
+.esa-form-footer,
+.esa-list-heading {
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.esa-list-heading input {
+    max-width: none;
+}
+
+.esa-form-footer button {
+    width: 100%;
+}
+}

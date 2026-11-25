@@ -1,0 +1,452 @@
+.marks-status-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+.marks-status-layout {
+    display: flex;
+    align-items: flex-start;
+}
+
+.marks-status-content {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+}
+
+.marks-status-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 26px;
+}
+
+.marks-status-eyebrow {
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.marks-status-heading h1 {
+    margin: 7px 0 8px;
+    font-size: 29px;
+    font-weight: 750;
+    letter-spacing: -0.7px;
+}
+
+.marks-status-heading p,
+.marks-status-section-heading p,
+.marks-status-table-heading p {
+    margin: 0;
+    color: #718096;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.marks-status-refresh {
+    flex-shrink: 0;
+    border: 1px solid #dce3ed;
+    border-radius: 9px;
+    background: #fff;
+    color: #334155;
+    padding: 10px 15px;
+    font-weight: 650;
+    cursor: pointer;
+}
+
+.marks-status-refresh:hover:not(:disabled) {
+    background: #f0f5ff;
+    border-color: #a8bdf0;
+}
+
+.marks-status-refresh:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.marks-status-error {
+    padding: 13px 16px;
+    margin-bottom: 20px;
+    border: 1px solid #fecaca;
+    border-radius: 10px;
+    background: #fff1f2;
+    color: #b42318;
+    font-size: 13px;
+}
+
+.marks-status-filter-card,
+.marks-status-table-card {
+    border: 1px solid #e7ebf2;
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgb(15 23 42 / 3%);
+}
+
+.marks-status-filter-card {
+    padding: 23px;
+    margin-bottom: 22px;
+}
+
+.marks-status-section-heading,
+.marks-status-table-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.marks-status-section-heading {
+    margin-bottom: 21px;
+}
+
+.marks-status-section-heading h2,
+.marks-status-table-heading h2 {
+    margin: 0 0 6px;
+    font-size: 17px;
+    font-weight: 750;
+}
+
+.marks-status-filters {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.marks-status-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+}
+
+.marks-status-field label {
+    color: #475569;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.marks-status-field select,
+.marks-status-toolbar select {
+    width: 100%;
+    min-width: 0;
+    min-height: 42px;
+    border: 1px solid #dce3ed;
+    border-radius: 8px;
+    background: #fff;
+    color: #263247;
+    padding: 9px 11px;
+    font: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.marks-status-field select:focus,
+.marks-status-toolbar select:focus,
+.marks-status-search:focus-within {
+    border-color: #6e8de6;
+    box-shadow: 0 0 0 3px rgb(72 110 220 / 10%);
+}
+
+.marks-status-field select:disabled {
+    background: #f5f7fa;
+    color: #94a3b8;
+    cursor: not-allowed;
+}
+
+.marks-status-summary {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 22px;
+}
+
+.marks-status-stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 21px;
+    border: 1px solid #e7ebf2;
+    border-radius: 13px;
+    background: #fff;
+    box-shadow: 0 3px 12px rgb(15 23 42 / 3%);
+}
+
+.marks-status-stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 47px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    font-size: 23px;
+    font-weight: 750;
+}
+
+.marks-status-stat-icon.total {
+    background: #edf2ff;
+    color: #4f67c7;
+}
+
+.marks-status-stat-icon.assigned {
+    background: #e7f8ef;
+    color: #16834a;
+}
+
+.marks-status-stat-icon.pending {
+    background: #fff4df;
+    color: #a96708;
+}
+
+.marks-status-stat p {
+    margin: 0 0 5px;
+    color: #718096;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.marks-status-stat h3 {
+    margin: 0;
+    color: #182338;
+    font-size: 27px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.marks-status-table-card {
+    overflow: hidden;
+}
+
+.marks-status-table-heading {
+    padding: 23px 23px 19px;
+}
+
+.marks-status-record-count {
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #f0f4fa;
+    color: #526178;
+    padding: 7px 11px;
+    font-size: 11px;
+    font-weight: 750;
+}
+
+.marks-status-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 0 23px 19px;
+}
+
+.marks-status-search {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    flex: 1;
+    max-width: 420px;
+    min-height: 42px;
+    border: 1px solid #dce3ed;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+.marks-status-search > span {
+    color: #8390a4;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.marks-status-search input {
+    width: 100%;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #263247;
+    font: inherit;
+    font-size: 13px;
+}
+
+.marks-status-search input::placeholder {
+    color: #9aa5b5;
+}
+
+.marks-status-toolbar select {
+    width: 155px;
+}
+
+.marks-status-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.marks-status-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.marks-status-table thead {
+    background: #f7f9fc;
+}
+
+.marks-status-table th {
+    padding: 13px 19px;
+    border-top: 1px solid #edf0f5;
+    border-bottom: 1px solid #e7ebf2;
+    color: #68758a;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.marks-status-table td {
+    padding: 15px 19px;
+    border-bottom: 1px solid #edf0f5;
+    color: #354258;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.marks-status-table tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.marks-status-table tbody tr:hover {
+    background: #fafbfe;
+}
+
+.marks-status-student {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.marks-status-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #edf2ff;
+    color: #4f67c7;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.marks-status-student strong,
+.marks-status-table td > strong {
+    display: block;
+    color: #202d42;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.marks-status-student span,
+.marks-status-secondary {
+    display: block;
+    margin-top: 4px;
+    color: #8994a5;
+    font-size: 11px;
+}
+
+.marks-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    border-radius: 20px;
+    padding: 7px 10px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.marks-status-badge.is-assigned {
+    background: #e8f8ef;
+    color: #16834a;
+}
+
+.marks-status-badge.is-pending {
+    background: #fff4df;
+    color: #9a620a;
+}
+
+.marks-status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.marks-status-empty {
+    height: 150px;
+    color: #8390a4 !important;
+    text-align: center;
+    white-space: normal !important;
+}
+
+.marks-status-table-footer {
+    padding: 14px 23px;
+    border-top: 1px solid #edf0f5;
+    background: #fff;
+    color: #8994a5;
+    font-size: 11px;
+}
+
+@media (max-width: 1100px) {
+    .marks-status-filters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .marks-status-content {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 700px) {
+    .marks-status-content {
+        padding: 15px;
+    }
+
+    .marks-status-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .marks-status-heading h1 {
+        font-size: 25px;
+    }
+
+    .marks-status-filters {
+        grid-template-columns: 1fr;
+    }
+
+    .marks-status-summary {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .marks-status-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .marks-status-search {
+        max-width: none;
+    }
+
+    .marks-status-toolbar select {
+        width: 100%;
+    }
+
+    .marks-status-table-heading {
+        align-items: flex-start;
+    }
+}
